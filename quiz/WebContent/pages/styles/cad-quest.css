@@ -1,0 +1,85 @@
+article header input {
+	margin-bottom: 10px;
+	margin-left: 82%;
+}
+
+article form label,article form input {
+	display: block;
+}
+
+article nav {
+	margin-left: 2%;
+	color: black;
+	font-size: 125%;
+}
+
+
+
+section{
+	margin-left: 5%;
+		
+}
+
+section form article div textarea{
+	resize: none;
+}	
+
+article .article-parent{
+	
+}
+
+section header {
+	font-size: 100%;
+}
+
+section article{
+	font-size: 100%;
+	margin-left: 3%;
+}
+
+section .block_left {
+	margin-left: 3%;
+    border: 1px dotted;
+    float: left;
+    height: 400px;
+    margin: 10px;
+    position: relative;
+    width: 45%;
+    display: block;	
+}
+
+section .block_left label{
+	display: block;
+}
+
+section .block_right input{
+	margin-top: 3%;
+	display: block;
+}
+
+section .block_right {
+    border: 1px dotted;
+    float: left;
+    height: 400px;
+    margin: 10px;
+    position: relative;
+    width: 45%;
+}
+
+form input {
+	size: 200%;
+	display: inline;
+	float: left;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+
+
+.btn-submit {
+	margin-left: 40%;
+}
+
+body{
+	
+	color: blue;
+}

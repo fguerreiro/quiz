@@ -1,0 +1,56 @@
+
+article header input {
+
+	
+/*
+	margin-bottom: 10px;
+	margin-left: 82%;
+*/
+}
+
+.section-major article{
+	margin-left: 3%;
+	margin-right: 3%;
+	
+	margin-top: 2%;
+}
+
+article form label,article form input {
+	display: block;
+}
+
+article div header{
+	margin-top: 5%;
+	margin-left: 25px;
+}
+
+article div .block_align_left{
+	/* 
+	margin-left: 2%;
+	*/
+	color: black;
+	font-size: 125%;
+	width: 765px;
+}
+
+article div .block_align_right{
+	/* 
+	margin-left: 2%;
+	*/
+	color: black;
+	font-size: 75%;
+	width: 160px;
+}
+
+form input {
+	size: 200%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+
+.btn-submit {
+	margin-left: 40%;
+}
+
