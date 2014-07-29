@@ -18,7 +18,6 @@
 <script type="text/javascript">
 	function testPasswordMatch() {
 
-		//alert('entrou no javascript');
 		
 		var pass1 = document.getElementById("password-register-1").value;
 		var pass2 = document.getElementById("password-register-2").value;

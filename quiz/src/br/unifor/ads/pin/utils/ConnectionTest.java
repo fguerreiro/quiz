@@ -17,15 +17,14 @@ public class ConnectionTest {
 
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			
+
 			String conectionUrl = "jdbc:sqlserver://localhost:1433;"
 					+ "databaseName=quiz;integratedSecurity=true";
 			con = DriverManager.getConnection(conectionUrl);
 			if (con == null) {
-				
 				System.out.println("Connection nulo!");
 			}
-			System.out.println("Conectado ao banco");
+			System.out.println("Connected to the db");
 
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
@@ -43,9 +42,9 @@ public class ConnectionTest {
 		player.setLifePoints(3);
 		player.setScore(799);
 		player.setPrivileges(0);
-		
+
 		return player;
-		
+
 	}
 
 	public static Player mockExistingPlayer() {
@@ -57,10 +56,9 @@ public class ConnectionTest {
 		player.setScore(899);
 		player.setPrivileges(0);
 		player.setPlayerId(1);
-		
+
 		return player;
 	}
-
 
 	public static void insertPlayer() {
 
@@ -80,16 +78,16 @@ public class ConnectionTest {
 		dao = new PlayerDAO();
 		dao.delete(mockExistingPlayer());
 	}
+
 	public static void listPlayers() {
-		
+
 		dao = new PlayerDAO();
 		dao.getPlayerList();
 	}
+
 	public static void checkLogin() {
 		dao = new PlayerDAO();
 		dao.checkLogin("francisco", "123456");
 	}
-
-
 
 }

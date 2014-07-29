@@ -13,57 +13,50 @@ article nav {
 	font-size: 125%;
 }
 
-
-
-section{
+section {
 	margin-left: 5%;
-		
 }
 
-section form article div textarea{
+section form article div textarea {
 	resize: none;
-}	
-
-article .article-parent{
-	
 }
 
 section header {
 	font-size: 100%;
 }
 
-section article{
+section article {
 	font-size: 100%;
 	margin-left: 3%;
 }
 
 section .block_left {
 	margin-left: 3%;
-    border: 1px dotted;
-    float: left;
-    height: 400px;
-    margin: 10px;
-    position: relative;
-    width: 45%;
-    display: block;	
-}
-
-section .block_left label{
+	border: 1px dotted;
+	float: left;
+	height: 400px;
+	margin: 10px;
+	position: relative;
+	width: 45%;
 	display: block;
 }
 
-section .block_right input{
+section .block_left label {
+	display: block;
+}
+
+section .block_right input {
 	margin-top: 3%;
 	display: block;
 }
 
 section .block_right {
-    border: 1px dotted;
-    float: left;
-    height: 400px;
-    margin: 10px;
-    position: relative;
-    width: 45%;
+	border: 1px dotted;
+	float: left;
+	height: 400px;
+	margin: 10px;
+	position: relative;
+	width: 45%;
 }
 
 form input {
@@ -74,12 +67,10 @@ form input {
 	margin-top: 2%;
 }
 
-
 .btn-submit {
 	margin-left: 40%;
 }
 
-body{
-	
+body {
 	color: blue;
 }

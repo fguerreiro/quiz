@@ -14,12 +14,19 @@ import br.unifor.ads.pin.domain.Player;
 public class SecurityCheckTagSupport extends TagSupport {
 
 	/**
+	 * @author Guerreiro
 	 * 
 	 */
 	private static final long serialVersionUID = -5544107049222132838L;
 
 	private boolean adminLevel;
 
+	/**
+	 * Verifies logged user
+	 * If not logged redirects to login servlet
+	 * Else, verifies path, if it's admin verifies privileges
+	 * Otherwise gives access errors
+	 */
 	@Override
 	public int doStartTag() throws JspException {
 
@@ -40,19 +47,16 @@ public class SecurityCheckTagSupport extends TagSupport {
 
 		if (player == null || player.getPrivileges() != 0) {
 
-			// redirecionar para uma pagina de erro
+			// redirects to error page
 			RequestDispatcher rd = request
 					.getRequestDispatcher("/pages/accessDenied.jsp");
 			try {
 				rd.forward(request, response);
 			} catch (ServletException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		}
 
 		return super.doStartTag();

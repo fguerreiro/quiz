@@ -12,7 +12,7 @@ public class QuestionAnswer implements Serializable {
 	private String question;
 	private Integer questionType;
 	private String answer;
-	
+
 	public QuestionAnswer() {
 	}
 
@@ -25,7 +25,6 @@ public class QuestionAnswer implements Serializable {
 		this.answer = answer;
 	}
 
-	
 	public Integer getQuestionType() {
 		return questionType;
 	}

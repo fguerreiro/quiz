@@ -17,8 +17,6 @@ body {
 	height: 1200px;
 }
 
-
-
 #ja-wrapper {
 	margin: 0 auto;
 	width: 950px;
@@ -146,6 +144,7 @@ article .login {
 
 article form label,article form input {
 	/*display: block;*/
+	
 }
 
 article form .btn_submit {
@@ -170,7 +169,7 @@ article div {
 .mainHeader nav ul {
 	list-style: none;
 	margin: 0 auto;
-	margin-left: 
+	margin-left:
 }
 
 .player {
@@ -193,15 +192,14 @@ article div {
 	padding: 10px;
 }
 
-.div-player-name{
-		
+.div-player-name {
 	float: left;
 	display: inline;
 	text-align: -webkit-match-parent;
 	background-color: white;
 }
 
-.div-player-name .label{
+.div-player-name .label {
 	color: #000000;
 	display: inline-block;
 	font-weight: bold;
@@ -209,18 +207,17 @@ article div {
 	padding: 10px;
 }
 
-.label-player-name{
-	
+.label-player-name {
 	/*
 	margin-left: 200px;
 	*/
-	margin-left:10px;
+	margin-left: 10px;
 }
 
-.label-player-privileges{
+.label-player-privileges {
 	/*
 	margin-left: 10px;
-	*/ 
+	*/
 	margin-left: 10px;
 }
 
@@ -330,7 +327,6 @@ article div {
 	border: solid 1px;
 }
 
-
 .mainFooter p {
 	width: 80%;
 	margin-left: 350px;
@@ -353,14 +349,13 @@ article div {
 	font-size: 75%;
 }
 
-.circle
-    {
-    width:125px;
-    height:125px;
-    border-radius:63px;
-    font-size:12px;
-    color:#fff;
-    line-height:125px;
-    text-align:center;
-    background:#000
-    }
+.circle {
+	width: 125px;
+	height: 125px;
+	border-radius: 63px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 125px;
+	text-align: center;
+	background: #000
+}

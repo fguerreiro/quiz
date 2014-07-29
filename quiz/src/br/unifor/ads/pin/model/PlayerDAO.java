@@ -63,7 +63,6 @@ public class PlayerDAO {
 			stmt.close();
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -82,13 +81,12 @@ public class PlayerDAO {
 			stmt.close();
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	public Player getPlayerById(int playerId) {
-		Player player = null; 
+		Player player = null;
 		try {
 
 			player = new Player();
@@ -121,7 +119,6 @@ public class PlayerDAO {
 			stmt.close();
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return player;
@@ -140,8 +137,6 @@ public class PlayerDAO {
 
 			ResultSet rs = stmt.executeQuery();
 
-			// players = new ArrayList<Player>();
-
 			while (rs.next()) {
 
 				player = new Player();
@@ -152,9 +147,6 @@ public class PlayerDAO {
 				player.setScore(rs.getInt("nr_pontos"));
 				player.setPrivileges(rs.getInt("cd_privilegio"));
 
-				// Date dateRegister = rs.getTimestamp("dt_cadastro");
-				// String newString = new
-				// SimpleDateFormat("dd/MM/yyyy").format(dateRegister);
 				player.setRegisteredAt(rs.getDate("dt_cadastro"));
 
 				System.out.println("encontrado player "
@@ -167,56 +159,9 @@ public class PlayerDAO {
 			stmt.close();
 			con.close();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return players;
-
-		// List<Player> players = null;
-		// try {
-		//
-		// con = ConnectionTest.getConnection();
-		// System.out.println("list 1");
-		//
-		// String sql = "SELECT * FROM jogador";
-		// PreparedStatement stmt = con.prepareStatement(sql);
-		// System.out.println("list 2");
-		// ResultSet rs = stmt.executeQuery();
-		// System.out.println("list 3");
-		//
-		// players = new ArrayList<Player>();
-		// System.out.println("list 4");
-		//
-		// while (rs.next()) {
-		// System.out.println("list 5");
-		// Player player = new Player();
-		//
-		// /* Adicionar campo Score nos métodos acima */
-		//
-		// player.setPlayerId(rs.getInt("id_jogador"));
-		// player.setLogin(rs.getString("nm_login"));
-		// player.setPassword(rs.getString("nm_senha"));
-		// player.setLifePoints(rs.getInt("nr_vidas"));
-		// player.setScore(rs.getInt("nr_pontos"));
-		// player.setPrivileges(rs.getInt("cd_privilegio"));
-		// player.setRegisteredAt(rs.getDate("dt_cadastro"));
-		//
-		// System.out.println(player.getLogin());
-		//
-		// players.add(player);
-		// }
-		//
-		// rs.close();
-		// stmt.close();
-		//
-		// return players;
-		//
-		// } catch (SQLException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		//
-		// }
-		// return players;
 	}
 
 	public Player checkLogin(String login, String password) {
@@ -233,8 +178,6 @@ public class PlayerDAO {
 
 			ResultSet rs = stmt.executeQuery();
 
-			// players = new ArrayList<Player>();
-
 			if (rs.next()) {
 
 				player = new Player();
@@ -244,24 +187,17 @@ public class PlayerDAO {
 				player.setLifePoints(rs.getInt("nr_vidas"));
 				player.setScore(rs.getInt("nr_pontos"));
 				player.setPrivileges(rs.getInt("cd_privilegio"));
-				// Date dateRegister = rs.getDate("dt_cadastro");
-				// String newString = new
-				// SimpleDateFormat("dd/MM/yyyy").format(dateRegister);
 				player.setRegisteredAt(rs.getDate("dt_cadastro"));
-				// player.setRegisteredAt(rs.getDate("dt_cadastro"));
 
 				System.out.println("encontrado player "
 						+ (rs.getString("nm_login")));
-
 			}
 
 			rs.close();
 			stmt.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return player;
 	}
-
 }

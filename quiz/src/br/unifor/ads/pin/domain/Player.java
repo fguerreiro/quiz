@@ -3,7 +3,7 @@ package br.unifor.ads.pin.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Player implements Serializable{
+public class Player implements Serializable {
 	private static final long serialVersionUID = -3072818508667571267L;
 	private Integer playerId;
 	private Integer privileges;
@@ -12,14 +12,13 @@ public class Player implements Serializable{
 	private Integer lifePoints;
 	private Integer score;
 	private Date registeredAt;
-	
+
 	public Player() {
-		
+
 	}
 
-	public Player(Integer privileges, String login,
-			String password, Integer lifePoints, Integer score,
-			Date registeredAt) {
+	public Player(Integer privileges, String login, String password,
+			Integer lifePoints, Integer score, Date registeredAt) {
 		super();
 		this.privileges = privileges;
 		this.login = login;
@@ -60,7 +59,6 @@ public class Player implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 
 	public Date getRegisteredAt() {
 		return registeredAt;
